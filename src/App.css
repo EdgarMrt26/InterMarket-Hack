@@ -10134,12 +10134,11 @@ body {
   .auth-mobile-navbar { display: none !important; }
 }
 
-/* CONTENIDO DEL NAVBAR — PEGADO ARRIBA (4px) Y MÁS ANCHO */
 .auth-mobile-navbar .navbar-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 4px 24px 6px 24px !important;  /* ← 4px ARRIBA (pegado) + 24px LATERALES (más ancho) */
+  padding: 0px 24px 4px 24px !important;  /* ← 0px ARRIBA = PEGADO */
   width: 100%;
 }
 

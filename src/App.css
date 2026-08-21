@@ -10789,10 +10789,10 @@ body {
 }
 
 /* ============================================================
-   NAVBAR MÓVIL — PEGADO AL BORDE SUPERIOR
+   NAVBAR MÓVIL — PEGADO AL BORDE SUPERIOR 
    ============================================================ */
 .auth-mobile-navbar {
-  display: none;
+  display: block !important;  /* ← FORZAMOS que se muestre en móvil */
   width: 100%;
   background: linear-gradient(145deg, #F8D6D6 0%, #EEDCE6 30%, #D3E9F1 65%, #A9EEFF 100%);
   padding: 0 !important;
@@ -10802,9 +10802,9 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
   .auth-mobile-navbar {
-    display: block;
+    display: none !important;  /* ← Ocultamos en desktop */
   }
 }
 
@@ -10812,7 +10812,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 20px 4px 20px !important;  /* ← 8px de padding superior (pegado arriba con un pequeño respiro) */
+  padding: 6px 20px 4px 20px !important;  /* ← PEGADO ARRIBA con respiro */
   width: 100%;
 }
 
@@ -10836,7 +10836,7 @@ body {
 
 @media (max-width: 480px) {
   .auth-mobile-navbar .navbar-content {
-    padding: 6px 14px 2px 14px !important;
+    padding: 5px 14px 2px 14px !important;
   }
   .auth-mobile-navbar .navbar-logo {
     height: 42px;
@@ -10853,7 +10853,7 @@ body {
 .auth-sheet {
   flex: 1;
   background: #ffffff;
-  padding: 28px 20px 30px !important;  /* ← 28px de margen entre nav y formulario */
+  padding: 32px 20px 30px !important;  /* ← 32px DE MARGEN entre nav y formulario */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10863,7 +10863,7 @@ body {
 
 @media (max-width: 991px) {
   .auth-sheet {
-    padding: 28px 16px 24px !important;  /* ← 28px de margen en móvil también */
+    padding: 32px 16px 24px !important;  /* ← 32px DE MARGEN en móvil */
     align-items: flex-start;
     justify-content: flex-start;
     flex: 1;
@@ -10872,7 +10872,7 @@ body {
 
 @media (max-width: 480px) {
   .auth-sheet {
-    padding: 24px 12px 20px !important;
+    padding: 28px 12px 20px !important;  /* ← 28px DE MARGEN en móvil pequeño */
   }
 }
 
